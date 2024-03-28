@@ -1,0 +1,160 @@
+:root {
+    --gray: #212121;
+
+}
+
+body {
+
+    background-color: var(--gray)
+}
+
+.info {
+    margin: auto;
+    margin-bottom: center;
+    width: 1800px;
+    height: 100px;
+    border-radius: 30px;
+    background-color: #242424;
+    filter: drop-shadow(0px 6px 50px black);
+
+}
+
+
+.info-text {
+    margin: auto;
+    margin-bottom: center;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    font-size: 70px;
+    font-family: "Orbitron", sans-serif;
+}
+
+
+.button-75 {
+  align-items: center;
+  background-image: linear-gradient(135deg, #9900ff 40%, #48004b);
+  border: 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-family: "Codec cold",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  height: 54px;
+  justify-content: center;
+  letter-spacing: .4px;
+  line-height: 1;
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-75:active {
+  outline: 0;
+}
+
+.button-75:hover {
+  outline: 0;
+}
+
+.button-75 span {
+  transition: all 200ms;
+}
+
+.button-75:hover span {
+  transform: scale(.9);
+  opacity: .75;
+}
+
+@media screen and (max-width: 991px) {
+  .button-75 {
+    font-size: 15px;
+    height: 50px;
+  }
+
+  .button-75 span {
+    line-height: 50px;
+  }
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    margin-right: 1450px;
+    position: relative;
+    left: 700px;
+  }
+
+  .button-75:first-child {
+    margin-left: 0;
+  }
+  
+  .button-75:last-child {
+    margin-right: 0;
+  }
+
+
+  #menu_checkbox {
+    display: none;
+  }
+  
+  label {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    display: block;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%);
+    transition: 0.3s ease transform;
+    cursor: pointer;
+  }
+  
+  label div {
+    width: 6px;
+    height: 6px;
+    background-color: #143240;
+    margin-left: 0;
+    margin-bottom: 6px;
+    border-radius: 4px;
+    transition: 0.3s ease width, 0.3s ease margin-left, 0.3s ease margin-bottom,
+      0.3s ease background-color;
+  }
+  
+  label div:first-child {
+    width: 22px;
+  }
+  
+  label div:nth-child(2) {
+    width: 15px;
+  }
+  
+  label div:last-child {
+    width: 30px;
+    margin-bottom: 0;
+  }
+  
+  #menu_checkbox:checked + label {
+    transform: translateY(-50%) rotateZ(-90deg);
+  }
+  
+  #menu_checkbox:checked + label div {
+    width: 6px;
+    margin-left: 12px;
+    margin-bottom: 3px;
+    background-color: #ffc107;
+  }
